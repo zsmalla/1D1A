@@ -12,7 +12,7 @@ def solution(nums):
     return answer
 
 def othersolution(nums):
-    return min(len(nums)/2, len(set(nums)))         # 와...
+    return min(len(nums)/2, len(set(nums)))         # 와....
 
 def main():
     nums = [3,3,3,2,2,4]

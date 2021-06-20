@@ -1,4 +1,4 @@
-package LEVEL1.java.폰켓몬;
+package LEVEL1.java.Ponketmon;
 
 import java.util.HashSet;           // java set interface
 
