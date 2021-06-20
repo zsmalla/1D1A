@@ -8,7 +8,6 @@ def solution(nums):
         answer = len(a)
     else:
         answer = int(N)
-
     return answer
 
 def othersolution(nums):
