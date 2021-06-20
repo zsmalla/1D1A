@@ -14,6 +14,7 @@ class Solution {
 
         if (a.size() < N) answer = a.size();
         else answer = N;
+        
         return answer;
     }
 }
