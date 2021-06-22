@@ -1,3 +1,5 @@
+import re   # othersolution
+
 def solution(new_id):
     rm_char = ['-', '_', '.']
     
@@ -31,7 +33,16 @@ def solution(new_id):
 2. 문자열은 요소 임의 조작 불가능 => 제거해야 할 경우 replace() 메소드 사용하거나 다른 문자열로 옮겨야함
 3. 양쪽 끝 특정 문자를 제거해야할 경우 strip() 사용
 '''
-
+def othersolution(new_id):      # 정규표현식을 활용한 풀이
+    st = new_id
+    st = st.lower()                         # 1단계 : 모든 문자를 소문자로 치환
+    st = re.sub('[^a-z0-9\-_.]', '', st)    # 2단계 : 숫자+소문자, 특정 기호를 제외한 모든 기호 제거            
+    st = re.sub('\.+', '.', st)
+    st = re.sub('^[.]|[.]$', '', st)
+    st = 'a' if len(st) == 0 else st[:15]
+    st = re.sub('^[.]|[.]$', '', st)
+    st = st if len(st) > 2 else st + "".join([st[-1] for i in range(3-len(st))])
+    return st
 
 
 
