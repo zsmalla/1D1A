@@ -16,11 +16,11 @@ def othersolution(participant, completion):    # counter를 활용한 풀이
 
     '''
     answer = Counter(participant) - Counter(completion)
+    return list(answer.keys())[0]
 
 def main():
     participant = ["leo", "kiki", "eden"]
     completion = ["eden", "kiki"]
-    print(list(Counter(participant) - Counter(completion))[0])
     print(solution(participant, completion))
 
 main()
