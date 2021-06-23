@@ -8,3 +8,4 @@
 >   - 20210620 폰켓몬
 >   - 20210621 완주하지못한 선수 (JAVA HashMap 공부하고 다시)
 >   - 20210622 신규아이디 추천 ([정규 표현식](https://wikidocs.net/4309))
+>   - 20210623 K번째 수 ([map, lambda](https://tykimos.github.io/2020/01/01/Python_Lambda_Map/)), 음양더하기
