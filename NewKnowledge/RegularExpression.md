@@ -131,6 +131,73 @@ finditer() : 문자열 중 정규식과 일치하는 부분 문자열을 반복 
 <re.Match object; span=(19, 23), match='jisu'>    # 각각 match 객체
 ```
 
+## match 객체의 메서드
+- 어떤 문자열이 매치되었는가?
+- 매치된 문자열의 인덱스는 어디서부터 어디까지인가?
+  
+|method|기능|
+|---|---|
+|group()|매치된 문자열을 돌려준다.|
+|start()|매치된 문자열의 시작 위치를 돌려준다.|
+|end()|매치된 문자열의 끝 위치를 돌려준다.|
+|span()|매치된 문자열의 (시작,끝)에 해당하는 튜플을 돌려준다.|
+
+```python
+>>> m = re.match('[a-z]+', 'python123')     # 모듈 단위로 수행하기
+>>> m.group()
+'python'
+>>> m.start()
+0
+>>> m.end()
+6
+>>> m.span()
+(0, 6)
+```
+
+## 컴파일 옵션
+정규식을 컴파일 할 때 다음의 옵션을 사용 가능
+- DOTALL(S) : ' . '이 줄바꿈 문자를 포함하여 모든 문자와 매치할 수 있도록 하는 옵션
+- IGNORECASE(I) : 대소문자 관계 없이 매치
+- MULTYLINE(M) : 여러줄과 매치될 수 있도록 하는 옵션('^', '&' 메타문자와 사용)
+- VERBOSE(X) : 정규식 가독성 좋게 작성 가능, 주석 사용 가능
+- ```re.compile(r'정규식')``` : 백슬래시 기능 제외하고 컴파일
+
+### 사용 예시
+```python
+>>> p = re.compile('a.b', re.DOTALL)
+>>> p = re.compile('a.b', re.S)
+>>> m = p.match('a\nb')
+>>> print(m)
+<re.Match object; span=(0, 3), match='a\nb'>
+
+>>> p = re.compile('[a-z]+', re.IGNORECASE)
+>>> p = re.compile('[a-z]+', re.I)
+>>> m = p.match('python')
+>>> print(m)
+<re.Match object; span=(0, 6), match='python'>
+
+>>> p = re.compile("^python\s\w+", re.MULTILINE)
+>>> data = """python one
+life is too short
+python two
+you need python
+python three"""
+>>> print(p.findall(data))
+['python one', 'python two', 'python three']
+
+>>> charref = re.compile(r'&[#](0[0-7]+|[0-9]+|x[0-9a-fA-F]+);')
+>>> charref = re.compile(r"""
+ &[#]                # Start of a numeric entity reference
+ (
+     0[0-7]+         # Octal form
+   | [0-9]+          # Decimal form
+   | x[0-9a-fA-F]+   # Hexadecimal form
+ )
+ ;                   # Trailing semicolon
+""", re.VERBOSE)
+
+>>> p = re.compile(r'\\section')    # remove backslice issue
+```
 
 
 
