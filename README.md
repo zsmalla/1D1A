@@ -11,3 +11,4 @@
 >   - 20210623 K번째 수 ([map, lambda](https://tykimos.github.io/2020/01/01/Python_Lambda_Map/)), 음양더하기, 소수만들기([itertools](https://yganalyst.github.io/etc/memo_18_itertools/))
 >   - 20210627 로또의 최고 순위와 최저 순위
 >   - 20210628 모의고사, 내적, 체육복, 크레인 인형뽑기 게임(-ing)
+>   - 20210630 크레인 인형뽑기 게임(stack)
