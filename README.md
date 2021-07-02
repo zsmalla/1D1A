@@ -13,4 +13,4 @@
 >   - 20210628 모의고사, 내적, 체육복, 크레인 인형뽑기 게임(-ing)
 >   - 20210630 크레인 인형뽑기 게임(stack)
 >   - 20210701 키패드 누르기(-ing)
->   - 20210702 키패드 누르기, 3진법 뒤집기([내장함수 int()](https://codetorial.net/tips_and_examples/int_function.html)), 실패율
+>   - 20210702 키패드 누르기, 3진법 뒤집기([내장함수 int()](https://codetorial.net/tips_and_examples/int_function.html)), 실패율, 예산, 약수의 개수와 덧셈
