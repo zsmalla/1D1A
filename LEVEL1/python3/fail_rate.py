@@ -2,13 +2,10 @@ from collections import Counter
 
 def solution(N, stage):
     n = len(stage)                                      # 총 스테이지의 개수(실패율 계산의 가변 변수로 중요!!)
-    c = Counter(stage)                                  # 각 스테이지를 진행하고 있는 사람의 수 파악    => list.count()로도 활용 가능
+    c = Counter(stage)                                  # 각 스테이지를 진행하고 있는 사람의 수 파악    => list.count(i)로도 활용 가능 근데 이건 for문 사용해서 인덱스로 접근 (O(n))
     st = {i: j for i, j in zip(c.keys(), c.values())}   # 카운터 객체를 dict형태로 변환                => counter.most_common() 메소드로 가능
     stage_range = [i+1 for i in range(N)]               # 밑에서 for i in range(1, N+1)하면 생략 가능
-
-    # for i in stage_range:
-    #     if not i in st.keys():                          
-    #         st[i] = 0                                   
+                               
     for i in stage_range:
         if not i in st.keys():                           # 진행하고 있는 사람이 없는 스테이지의 경우
             st[i] = 0                                    # 데이터 추가   
@@ -30,3 +27,16 @@ def main():
     print(solution(N, stage))
 
 main()
+
+def othersolution(N, stages):               # 동일한 접근 방법이었지만 훨씬 간결한 코드, 코드를 간결하게 작성할 수 있는 방향으로 생각을 해야될 것 같다.
+    result = {}
+    denominator = len(stages)
+    for stage in range(1, N+1):
+        if denominator != 0:
+            count = stages.count(stage)
+            result[stage] = count / denominator
+            denominator -= count
+        else:
+            result[stage] = 0
+    return sorted(result, key=lambda x : result[x], reverse=True)
+
