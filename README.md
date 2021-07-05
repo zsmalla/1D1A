@@ -16,3 +16,4 @@
 >   - 20210702 키패드 누르기, 3진법 뒤집기([내장함수 int()](https://codetorial.net/tips_and_examples/int_function.html)), 실패율, 예산, 약수의 개수와 덧셈
 >   - 20210703 두 개 뽑아서 더하기, 2016년, 비밀지도([비트연산](https://github.com/zsmalla/1D1A/blob/master/NewKnowledge/PythonBitOperation.md))
 >   - 20210704 가운데 글자 가져오기, 다트게임
+>   - 20210705 practice 8문제
