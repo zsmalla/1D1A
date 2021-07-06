@@ -17,3 +17,4 @@
 >   - 20210703 두 개 뽑아서 더하기, 2016년, 비밀지도([비트연산](https://github.com/zsmalla/1D1A/blob/master/NewKnowledge/PythonBitOperation.md))
 >   - 20210704 가운데 글자 가져오기, 다트게임
 >   - 20210705 practice 8문제
+>   - 20210706 소수찾기([에라토스테네스의 체](https://github.com/zsmalla/1D1A/blob/master/NewKnowledge/Sieve_Of_Eratosthenes.md))
