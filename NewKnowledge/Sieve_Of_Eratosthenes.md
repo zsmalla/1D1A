@@ -1,5 +1,6 @@
 # 에라토스테네스의 체(Sieve Of Eratosthenes)
 소수를 판별하는 알고리즘 중 하나, 특정 범위의 많은 소수들을 구할 때 가장 유용한 알고리즘(현존하는 것 중에 가장 빠르다고 함)
+#### [참고 문서](https://ko.wikipedia.org/wiki/%EC%97%90%EB%9D%BC%ED%86%A0%EC%8A%A4%ED%85%8C%EB%84%A4%EC%8A%A4%EC%9D%98_%EC%B2%B4)
 
 ## 알고리즘
 1. 2부터 소수를 구하고자 하는 구간의 모든 수를 나열
@@ -12,6 +13,7 @@
 6. 남아있는 수가 소수
 
 ![과정](https://commons.wikimedia.org/wiki/File:Sieve_of_Eratosthenes_animation.gif)
+
 
 
 ```python
