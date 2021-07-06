@@ -12,7 +12,7 @@
 5-2. 이미 소수가 아니라고 판정된 수도 건너 뜀 : 효율성 up
 6. 남아있는 수가 소수
 
-![과정](https://commons.wikimedia.org/wiki/File:Sieve_of_Eratosthenes_animation.gif)
+![](https://commons.wikimedia.org/wiki/File:Sieve_of_Eratosthenes_animation.gif)
 
 
 
