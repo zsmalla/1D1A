@@ -75,3 +75,17 @@ seoul에 "Kim"은 오직 한 번만 나타나며 잘못된 값이 입력되는 �
 def solution(seoul):
     return "김서방은 %d에 있다" % seoul.index('Kim')    # 굳
 
+''' 수박수박수박수
+길이가 n이고, "수박수박수박수...."와 같은 패턴을 유지하는 문자열을 리턴하는 함수, solution을 완성하세요. 
+예를들어 n이 4이면 "수박수박"을 리턴하고 3이라면 "수박수"를 리턴하면 됩니다.
+'''
+def solution(n):
+    sample = '수박'
+    answer = ''
+    for i in range(n):
+        answer += sample[i%2]
+    return answer
+
+def other_solution(n):
+    return "".join(["수박"[i%2] for i in range(n)])     # 리스트에 있는 항목을 문자열에 더할 때 join 까먹음 
+

@@ -18,3 +18,4 @@
 >   - 20210704 가운데 글자 가져오기, 다트게임
 >   - 20210705 practice 8문제
 >   - 20210706 소수찾기([에라토스테네스의 체](https://github.com/zsmalla/1D1A/blob/master/NewKnowledge/Sieve_Of_Eratosthenes.md))
+>   - 20210707 practice 1문제 + WEHAVENOTIME_STUDY
