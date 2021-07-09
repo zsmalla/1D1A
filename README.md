@@ -19,3 +19,4 @@
 >   - 20210705 practice 8문제
 >   - 20210706 소수찾기([에라토스테네스의 체](https://github.com/zsmalla/1D1A/blob/master/NewKnowledge/Sieve_Of_Eratosthenes.md))
 >   - 20210707 practice 1문제 + WEHAVENOTIME_STUDY
+>   - 20210709 숫자문자열과영단어
