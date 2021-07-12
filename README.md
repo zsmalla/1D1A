@@ -18,5 +18,6 @@
 >   - 20210704 가운데 글자 가져오기, 다트게임
 >   - 20210705 practice 8문제
 >   - 20210706 소수찾기([에라토스테네스의 체](https://github.com/zsmalla/1D1A/blob/master/NewKnowledge/Sieve_Of_Eratosthenes.md))
->   - 20210707 practice 1문제 + WEHAVENOTIME_STUDY
+>   - 20210707 practice 1문제 + 오픈채팅방 [2019 KAKAO BLIND RECRUITMENT] - WEHAVENOTIME_STUDY
 >   - 20210709 숫자문자열과영단어
+>   - 20210713 시저암호, 이상한문자 만들기, practice 5문제

@@ -89,3 +89,49 @@ def solution(n):
 def other_solution(n):
     return "".join(["수박"[i%2] for i in range(n)])     # 리스트에 있는 항목을 문자열에 더할 때 join 까먹음 
 
+
+''' 약수의 합
+정수 n을 입력받아 n의 약수를 모두 더한 값을 리턴하는 함수, solution을 완성해주세요.
+'''
+def solution(n):
+    l = [i for i in range(1, n+1) if n%i==0]
+    return sum(l)
+
+def othersolution(num):
+    # num / 2 의 수들만 검사하면 성능 약 2배 향상잼
+    return num + sum([i for i in range(1, (num // 2) + 1) if num % i == 0])
+
+''' 자릿수 더하기
+자연수 N이 주어지면, N의 각 자릿수의 합을 구해서 return 하는 solution 함수를 만들어 주세요.
+예를들어 N = 123이면 1 + 2 + 3 = 6을 return 하면 됩니다.
+'''
+def solution(n):
+    return sum(map(int, str(n)))
+
+''' 자연수 뒤집어 배열로 만들기
+자연수 n을 뒤집어 각 자리 숫자를 원소로 가지는 배열 형태로 리턴해주세요. 예를들어 n이 12345이면 [5,4,3,2,1]을 리턴합니다.
+'''
+def solution(n):
+    lst = [i for i in map(int, str(n))]
+  # lst = [i for i in map(int, reversed(str(n)))]       # reversed() 메소드를 이용한 reverse
+  # lst.reverse()                                       # reverse() 메소드를 이용한 reverse
+    return lst[::-1]                                    # 리스트 슬라이싱을 이용한 reverse
+
+''' 정수 내림차순으로 배치하기
+함수 solution은 정수 n을 매개변수로 입력받습니다. n의 각 자릿수를 큰것부터 작은 순으로 정렬한 새로운 정수를 리턴해주세요. 
+예를들어 n이 118372면 873211을 리턴하면 됩니다.
+'''
+def solution(n):
+    return int("".join(map(str,sorted([i for i in map(int, str(n))], key = lambda x : -x))))
+    # 1. n의 각 자리 숫자를 문자로 바꾼 리스트로 변환
+    # 2. 변환된 리스트를 내림차순으로 정렬
+    # 3. 그걸 다시 문자로 바꿈 
+    # 4. 리스트 이어붙이기
+    # 5. 정수로 변환
+
+''' 정수 제곱근 판별
+임의의 양의 정수 n에 대해, n이 어떤 양의 정수 x의 제곱인지 아닌지 판단하려 합니다.
+n이 양의 정수 x의 제곱이라면 x+1의 제곱을 리턴하고, n이 양의 정수 x의 제곱이 아니라면 -1을 리턴하는 함수를 완성하세요.
+'''
+def solution(n):
+    return (n**0.5+1)**2 if n**0.5 == int(n**0.5) else -1
