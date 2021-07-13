@@ -1,8 +1,8 @@
 # 1D1A
 임지수의 1Day 1Algorithm Problems 도전기
 
-> - 2021-06-20 ~<br>
-> PROGRAMMERS CODINGTEST PRACTICE LEVEL1<br>
+> - 2021-06-20 ~ 2021-07-13<br>
+> PROGRAMMERS CODINGTEST PRACTICE LEVEL1 60문제 <br>
 > USING LANGUAGE <br>
 > <img alt="Python" src="https://img.shields.io/badge/python-%2314354C.svg?style=for-the-badge&logo=python&logoColor=white"/> <img alt="Java" src="https://img.shields.io/badge/java-%23ED8B00.svg?style=for-the-badge&logo=java&logoColor=white"/>
 >   - 20210620 폰켓몬
@@ -20,4 +20,5 @@
 >   - 20210706 소수찾기([에라토스테네스의 체](https://github.com/zsmalla/1D1A/blob/master/NewKnowledge/Sieve_Of_Eratosthenes.md))
 >   - 20210707 practice 1문제 + 오픈채팅방 [2019 KAKAO BLIND RECRUITMENT] - WEHAVENOTIME_STUDY
 >   - 20210709 숫자문자열과영단어
->   - 20210713 시저암호, 이상한문자 만들기, practice 5문제
+>   - 20210712 시저암호, 이상한문자 만들기, practice 5문제
+>   - 20210713 practice 10문제

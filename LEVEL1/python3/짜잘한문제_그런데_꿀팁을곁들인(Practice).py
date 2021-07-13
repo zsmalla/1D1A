@@ -135,3 +135,83 @@ n이 양의 정수 x의 제곱이라면 x+1의 제곱을 리턴하고, n이 양�
 '''
 def solution(n):
     return (n**0.5+1)**2 if n**0.5 == int(n**0.5) else -1
+
+""" 제일 작은 수 제거하기
+정수를 저장한 배열, arr 에서 가장 작은 수를 제거한 배열을 리턴하는 함수, solution을 완성해주세요. 
+단, 리턴하려는 배열이 빈 배열인 경우엔 배열에 -1을 채워 리턴하세요. 예를들어 arr이 [4,3,2,1]인 경우는 [4,3,2]를 리턴 하고, [10]면 [-1]을 리턴 합니다.
+"""
+def solution(arr):
+    arr.remove(min(arr))
+    return arr if arr else [-1]
+
+''' 짝수와 홀수
+정수 num이 짝수일 경우 "Even"을 반환하고 홀수인 경우 "Odd"를 반환하는 함수, solution을 완성해주세요.
+'''
+def solution(num):
+    return "Odd" if num % 2 else "Even"
+
+''' 최대공약수와 최소공배수
+두 수를 입력받아 두 수의 최대공약수와 최소공배수를 반환하는 함수, solution을 완성해 보세요. 배열의 맨 앞에 최대공약수, 그다음 최소공배수를 넣어 반환하면 됩니다. 
+예를 들어 두 수 3, 12의 최대공약수는 3, 최소공배수는 12이므로 solution(3, 12)는 [3, 12]를 반환해야 합니다.
+'''
+def solution(n, m):
+    a, b = min(n,m), max(n,m) 
+    while b:                # 유클리드 호제법
+        r = a % b
+        a, b = b, r
+    lcd = n*m / a
+    return [a, lcd]
+
+'''콜라츠 추측
+1937년 Collatz란 사람에 의해 제기된 이 추측은, 주어진 수가 1이 될때까지 다음 작업을 반복하면, 모든 수를 1로 만들 수 있다는 추측입니다. 작업은 다음과 같습니다.
+1-1. 입력된 수가 짝수라면 2로 나눕니다. 
+1-2. 입력된 수가 홀수라면 3을 곱하고 1을 더합니다.
+2. 결과로 나온 수에 같은 작업을 1이 될 때까지 반복합니다.
+예를 들어, 입력된 수가 6이라면 6→3→10→5→16→8→4→2→1 이 되어 총 8번 만에 1이 됩니다. 
+위 작업을 몇 번이나 반복해야하는지 반환하는 함수, solution을 완성해 주세요. 단, 작업을 500번을 반복해도 1이 되지 않는다면 –1을 반환해 주세요.
+'''
+def solution(num):
+    answer = 0
+    while num != 1:
+        num = num*3 + 1 if num %2 else num/2
+        answer += 1
+    return answer if answer < 500 else -1
+
+''' 평균 구하기
+정수를 담고 있는 배열 arr의 평균값을 return하는 함수, solution을 완성해보세요.
+'''
+def solution(arr):
+    return sum(arr)/len(arr)
+
+''' 하샤드 수
+양의 정수 x가 하샤드 수이려면 x의 자릿수의 합으로 x가 나누어져야 합니다. 
+예를 들어 18의 자릿수 합은 1+8=9이고, 18은 9로 나누어 떨어지므로 18은 하샤드 수입니다. 
+자연수 x를 입력받아 x가 하샤드 수인지 아닌지 검사하는 함수, solution을 완성해주세요.
+'''
+def solution(x):
+    return True if x%sum(i for i in map(int, str(x))) == 0 else False
+  # return x%sum(int(c) for c in str(x)) 하면 끝
+
+''' 핸드폰 번호 가리기
+프로그래머스 모바일은 개인정보 보호를 위해 고지서를 보낼 때 고객들의 전화번호의 일부를 가립니다.
+전화번호가 문자열 phone_number로 주어졌을 때, 전화번호의 뒷 4자리를 제외한 나머지 숫자를 전부 *으로 가린 문자열을 리턴하는 함수, solution을 완성해주세요.
+'''
+def solution(phone_number):
+    return '*'*(len(phone_number)-4)+phone_number[-4:]
+
+''' 행렬의 덧셈
+행렬의 덧셈은 행과 열의 크기가 같은 두 행렬의 같은 행, 같은 열의 값을 서로 더한 결과가 됩니다. 
+2개의 행렬 arr1과 arr2를 입력받아, 행렬 덧셈의 결과를 반환하는 함수, solution을 완성해주세요.
+'''
+def solution(arr1, arr2):
+    return [[a+b for a,b in zip(arr1[i],arr2[i])] for i in range(len(arr1))]
+
+'''x만큼 간격이 있는 n개의 숫자
+함수 solution은 정수 x와 자연수 n을 입력 받아, x부터 시작해 x씩 증가하는 숫자를 n개 지니는 리스트를 리턴해야 합니다. 
+다음 제한 조건을 보고, 조건을 만족하는 함수, solution을 완성해주세요.
+'''
+def solution(x, n):
+    return ([i for i in range(x, x*n+1, x)] if x > 0 else [i for i in range(x, x*n-1, x)]) if x != 0 else [0]*n
+    # 0인경우, 0이 아닌경우, 양수인경우, 음수인 경우 모두 생각해야하므로
+
+
