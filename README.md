@@ -4,9 +4,9 @@
 > - 2021-06-20 ~ 2021-07-13<br>
 > PROGRAMMERS CODINGTEST PRACTICE LEVEL1 60문제 <br>
 > USING LANGUAGE <br>
-> <img alt="Python" src="https://img.shields.io/badge/python-%2314354C.svg?style=for-the-badge&logo=python&logoColor=white"/> <img alt="Java" src="https://img.shields.io/badge/java-%23ED8B00.svg?style=for-the-badge&logo=java&logoColor=white"/>
+> <img alt="Python" src="https://img.shields.io/badge/python-%2314354C.svg?style=for-the-badge&logo=python&logoColor=white"/> 
 >   - 20210620 폰켓몬
->   - 20210621 완주하지못한 선수 (JAVA HashMap 공부하고 다시)
+>   - 20210621 완주하지못한 선수
 >   - 20210622 신규아이디 추천 ([정규 표현식](https://wikidocs.net/4309))
 >   - 20210623 K번째 수 ([map, lambda](https://tykimos.github.io/2020/01/01/Python_Lambda_Map/)), 음양더하기, 소수만들기([itertools](https://yganalyst.github.io/etc/memo_18_itertools/))
 >   - 20210627 로또의 최고 순위와 최저 순위
@@ -22,3 +22,8 @@
 >   - 20210709 숫자문자열과영단어
 >   - 20210712 시저암호, 이상한문자 만들기, practice 5문제
 >   - 20210713 practice 10문제
+> - 2021-07-15 ~ <br>
+> PROGRAMMERS CODINGTEST PRACTICE LEVEL2 <br>
+> USING LANGUAGE <br>
+> <img alt="Python" src="https://img.shields.io/badge/python-%2314354C.svg?style=for-the-badge&logo=python&logoColor=white"/> 
+>   - 20210715 N개의 최소공배수
