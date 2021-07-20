@@ -4,7 +4,7 @@
 > - 2021-06-20 ~ 2021-07-13<br>
 > PROGRAMMERS CODINGTEST PRACTICE LEVEL1 60문제 <br>
 > USING LANGUAGE <br>
-> <img alt="Python" src="https://img.shields.io/badge/python-%2314354C.svg?style=for-the-badge&logo=python&logoColor=white"/> 
+> <img alt="Python" src="https://img.shields.io/badge/python-%2314354C.svg?style=for-the-badge&logo=python&logoColor=white"/> <br>
 >   - 20210620 폰켓몬
 >   - 20210621 완주하지못한 선수
 >   - 20210622 신규아이디 추천 ([정규 표현식](https://wikidocs.net/4309))
